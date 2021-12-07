@@ -2,50 +2,66 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>John's Portfolio</title>
-    <link rel="stylesheet" href="./assets/css/reset.css"
-    <link rel="stylesheet" href="./assets/css/style.css"> 
+    <link rel="stylesheet" href="./assets/css/reset.css"> 
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <!-- Created the head of the page including a title, meta elements, and style sheets. -->
-<!-- Added a background image that will appear under the header. -->
 
-<img class="background_image" src=""
 <body>
-    <header>
-        <!-- Created a header with a tag links to the various sectionf of my portfolio. -->
-        <h1>John Roberts</h1>
-        <nav>
-            <ul>
-                <li><a href="about_me">About Me</a></li>
-                <li><a href="my_work">My Work</a></li>
-                <li><a href="contact_me">Conatct Me</a></li>
-                <li><a href="Resume Path" target="_blank">Resume</a></li>
-                
-            </ul>
-        </nav>
-    </header>
     <main>
+        <header>
+            <!-- Created a header with a tag links to the various sectionf of my portfolio. -->
+            <h1 class="page_title">John Roberts</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about_me">About Me</a></li>
+                    <li><a href="#my_work">My Work</a></li>
+                    <li><a href="#contact_me">Conatct Me</a></li>
+                    <li><a href="https://docs.google.com/document/d/1cdxtch8rGiM-hXh1ZJYld5mzGSWA4GpBjMWkod1iL1g/edit" target="_blank" rel="noreferrer noopener">Resume</a></li>
+
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Added a background image that will appear under the header. -->
+
+        <img class="background_image" src="./assets/images/triangle_background_image.png" <main>
         <section id="about_me">
             <h2>About Me</h2>
+            <!-- Created about me section which is linked to header. -->
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                Qui dicta minus molestiae vel beatae natus eveniet ratione temporibus aperiam 
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Qui dicta minus molestiae vel beatae natus eveniet ratione temporibus aperiam
                 harum alias officiis assumenda officia quibusdam deleniti eos cupiditate dolore doloribus!
                 <br>
                 <br>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                 Qui dicta minus molestiae vel beatae natus eveniet ratione temporibus aperiam harum 
-                 alias officiis assumenda officia quibusdam deleniti eos cupiditate dolore doloribus!
+                Qui dicta minus molestiae vel beatae natus eveniet ratione temporibus aperiam harum
+                alias officiis assumenda officia quibusdam deleniti eos cupiditate dolore doloribus!
             </p>
 
         </section>
 
         <section id="my_work">
             <h2>My Work</h2>
-            <a class=""
-
+            <!-- added working links to all images -->
+            <a class="projects" href="https://github.com/robertsjn2000"><img src="./assets/images/purple_background_image.jpg" class="projects"></a>
+            <article class="project_container">
+                <a class="projects" href="https://github.com/robertsjn2000"><img src="./assets/images/orangetree_background_image.jpg" class="projects"></a>
+                <a class="projects" href="https://github.com/robertsjn2000"><img src="./assets/images/paint_background_image.jpg" class="projects"></a>
+                <a class="projects" href="https://github.com/robertsjn2000"><img src="./assets/images/sky_background_image.jpg" class="projects"></a>
+                <a class="projects" href="https://github.com/robertsjn2000"><img src="./assets/images/color_scheme_background_image.jpg" class="projects"></a>
+            </article>
+        </section>
+        <section id="contact_me">
+            <h2>Contact Me</h2>
+            <ul>
+                <li>555.555.5555</li>
+                <li>robertsjn2000@gmail.com</li>
+            </ul>
 
         </section>
-            
+
     </main>
 </body>
 
