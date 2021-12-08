@@ -1,22 +1,240 @@
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --purpleRed: #ad0017;
+    --lightBlue: #00b7ff;
+    --deepViolet: #2b0057;
+    --greyBlue: #e8eef7;
+  }
 
 header { 
-width: 100%;
-background-color: grey;
-
+display: grid;
+grid-template-columns: 50% 50%;
+background-color:(var(--purpleRed));
 }
 
-body {
-    display:flex;
+header section h1{
+    margin: auto;
+    margin-bottom: 1rem;
+}
+
+
+main section h1{
+    margin: auto;
+    margin-bottom: 1rem;
+}
+
+.engage{
+    display: flex;
     flex-direction: column;
-    font-family: 'Times New Roman', Times, serif;
+    justify-content: flex-start;
+    height: auto;
+    width: 100%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-left: -1.5rem;
+    margin-right: -1.5rem;
+}
+
+
+.page_title {
+    display: flex;
+    justify-content: flex-start;
+    font-size: 250%;
+    align-self: center;
+    background-color: purple;
+    margin-right: 26rem;
+    padding-left: 1rem;
+    padding-bottom: .5rem;
+    border-radius: .5rem;
+}
+
+
+
+.nav_links{
+    display: flex;
+    align-items: stretch;
+    justify-content: space-around;
+    width: auto;
+    margin-top: 1rem;
+    text-decoration: underline;
+}
+
+
+
+
+ .project_card_column {
+    flex: 1 0 50%;
+    padding: 1.5rem;
+    transition: flex-basis 500ms linear;
+    margin-bottom: 1.5rem;
+  }
+  
+
+  .project_card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100%;
+    padding: 2rem;
+    color: var(--heliotrope);
+    outline: 2px dashed var(--lightBlue);
+    outline-offset: -5px;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .project_card .project_header {
+    position: relative;
+    margin: -4rem 0 1.5rem 0;
+    padding: 0.5rem 1rem;
+    background-color: var(--greyBlue);
+    color: var(--heliotrope);
+    border: 2px solid var(--lightBlue);
+    border-radius: 8px;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .project_card:hover,
+  .project_card:hover .project_header {
+    box-shadow: inset 0px 0px 8px var(--deepViolet), 0 0 15px var(--deepViolet);
+  }
+  
+
+  .project_card .project_block {
+    flex-grow: 1;
+  }
+  
+  .project_card pre {
+    white-space: pre-wrap;
+    overflow: auto;
+    tab-size: 4;
+    padding: 1.2rem 1rem;
+    color: var(--deepViolet);
+    border-radius: 10px;
+    background-image: linear-gradient(
+      rgba(28, 202, 255, 0.3) 0%,
+      rgba(0, 0, 0, 0.6) 100%
+    );
+    display: flex;
+    align-items: center;
+  }
+  
+  
+  h1 {
+    margin-top: .5rem;
+    font-size: 1rem;
+    margin-bottom: .5rem;
+  }
+  
+  p {
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    margin: 1rem;
+  }
+  
 
 .projects {
-    width: 100px;
-    height: 100px;
+    width: fit-content;
+    height: 425px
 }
 
 .background_image {
     width: 100%;
-    height: 200px;
+    height: auto;
 }
+
+.center{
+    flex: 0 1 auto;
+    font-size: 175%;
+    font-style: italic;
+    color: black;
+    margin-top: 1rem;
+}
+.contact
+{
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 150%;
+    background-color: royalblue;
+    margin-right: 1rem;
+    padding-left: 1rem;
+    padding-bottom: .5rem;
+    border-radius: .5rem;}
+
+
+
+/* oriented contact links and styled them */
+.contact_links{
+    display: flex;
+    align-items: stretch;
+    justify-content: space-around;
+    width: auto;
+    margin-top: 1rem;
+    text-decoration: underline;
+}
+
+#featured_box{
+    flex: 0 1 100%;
+    max-width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    .project_card_column {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+    
+    .nav_links{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    header {
+        display: flex;
+        flex-direction: column;
+    }
+  
+   
+    .project_card_column:last-child {
+      flex-grow: 1;
+    }
+
+    #featured_box{
+        flex: 0 1 100%;
+       
+    }
+  }
+  
+  
+
+  @media screen and (max-width: 992px) {
+    header {
+      width: 100%;
+    }
+
+    .nav_links{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    header {
+        display: flex;
+        flex-direction: column;
+    }
+  
+    .project_card_column {
+      flex: 0 0 50%;
+      max-width: 50%;
+    }
+  }
+
+  
+  
